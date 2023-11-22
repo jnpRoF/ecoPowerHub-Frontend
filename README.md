@@ -1,13 +1,3 @@
-<<<<<<< HEAD
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-=======
 # EcoPowerHub 🌱💡
 EcoPowerHub: Empowering Tomorrow, One Watt at a Time on ToroNet
 ## Welcome to EcoPowerHub
@@ -82,7 +72,6 @@ Our diverse team is passionate about creating positive change. Meet the brillian
    - **IVOR EDAFE:** Responsible for co-writing backend;
    - **OLUBADEJO CORNELIUS:** Responsible for co-writing backend;
 
->>>>>>> f986db3adce13474a2828a6b7cf132d0b1897c9c
 
 ## Connect with Us
 
