@@ -1,6 +1,6 @@
 import img from "../../../constants/images";
 import Button from "../../Button/Button";
-import { ConnectButton } from "@web3uikit/web3";
+
 import Register from "../../Register/Register";
 
 const ConnectWallet = () => {
