@@ -1,5 +1,4 @@
 // import { useState, useEffect } from "react";
-import { useMoralis } from "react-moralis";
 import { Routes, Route } from "react-router-dom";
 import axios from "axios";
 import NavBar from "./components/NavBar/Navbar.jsx";
@@ -12,7 +11,7 @@ import CreateAccount from "./components/pages/CreateAccount/CreateAccount.jsx";
 import HomePage from "./components/pages/HomePage/HomePage.jsx";
 
 const App = () => {
-    const { isWeb3Enabled } = useMoralis()
+
     return (
         <>
             <NavBar />

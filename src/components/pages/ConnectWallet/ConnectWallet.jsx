@@ -1,5 +1,5 @@
 import img from "../../../constants/images";
-import Button from "../../Button/Button";
+// import Button from "../../Button/Button";
 
 import Register from "../../Register/Register";
 
@@ -12,7 +12,7 @@ const ConnectWallet = () => {
       pageText2="There are several wallet providers."
     >
       <>
-        <ConnectButton />
+        {/* <ConnectButton /> */}
         {/* <Button
           className="px-8 p-4 pt-4 w-full font-semibold bg-ctaColor rounded-2xl text-center lg:w-3/5"
           href="#"
