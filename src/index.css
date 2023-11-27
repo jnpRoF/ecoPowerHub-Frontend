@@ -2,67 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-/* *{
-  border: 1px solid red
-} */
-
 body {
-  font-family: "Work Sans", sans-serif;
-  background-color: #2b2b2b;
-  color: #fff;
+    font-family: 'Work Sans', sans-serif;
+    background-color: #2b2b2b;
+    color: #fff;
 }
 
 #logoText {
-  font-family: "Space Mono", monospace;
+    font-family: 'Space Mono', monospace;
 }
 
 .font1 {
-  font-family: "Space Mono", monospace;
+    font-family: 'Space Mono', monospace;
 }
 
 /* Hamburger Menu */
 .hamburger {
-  cursor: pointer;
-  width: 24px;
-  height: 24px;
-  transition: all 0.25s;
-  position: relative;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
 }
 
 .hamburger-top,
 .hamburger-middle,
 .hamburger-bottom {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 2px;
-  background: #000;
-  transform: rotate(0);
-  transition: all 0.5s;
-  background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background: #000;
+    transform: rotate(0);
+    transition: all 0.5s;
+    background-color: #fff;
 }
 
 .hamburger-middle {
-  transform: translateY(6px);
-  margin-left: 5px;
+    transform: translateY(6px);
+    margin-left: 5px;
 }
 .hamburger-bottom {
-  transform: translateY(12px);
+    transform: translateY(12px);
 }
 
 .open {
-  transform: rotate(90deg);
-  transform: translateY(0px);
+    transform: rotate(90deg);
+    transform: translateY(0px);
 }
 .open .hamburger-top {
-  transform: rotate(45deg) translateY(6px) translate(6px);
+    transform: rotate(45deg) translateY(6px) translate(6px);
 }
 
 .open .hamburger-middle {
-  display: none;
+    display: none;
 }
 
 .open .hamburger-bottom {
-  transform: rotate(-45deg) translateY(6px) translate(-6px);
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
 }

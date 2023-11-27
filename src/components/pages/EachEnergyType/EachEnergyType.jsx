@@ -30,7 +30,7 @@ const EachEnergyType = () => {
               </p>
               <p className="text-sm md:text-base">
                 The Orbitians is a collection of 10,000 unique NFTs on the
-                Ethereum blockchain.
+                Toronet blockchain.
               </p>
               <p className="text-sm md:text-base">
                 There are all sorts of beings in the NFT Universe. The most

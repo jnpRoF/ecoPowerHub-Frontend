@@ -30,8 +30,7 @@ const MarketPlace = () => {
           img2={img.a1}
           avatarName="MoonDancer"
           energyName="DistantGalaxy"
-          price="1.63ETH"
-          highestBid="0.33wETH"
+          price="1.63Toro"
           className="flex flex-col w-full h-72 my-3 sm:w-[45%] md:w-[30%]"
         />
         <EachEnergy
@@ -39,8 +38,7 @@ const MarketPlace = () => {
           img2={img.a1}
           avatarName="NebulaKid"
           energyName="Life On Edena"
-          price="1.63ETH"
-          highestBid="0.33wETH"
+          price="1.63Toro"
           className="flex flex-col w-full h-72 my-3 sm:w-[45%] md:w-[30%]"
         />
         <EachEnergy
@@ -48,8 +46,7 @@ const MarketPlace = () => {
           img2={img.a1}
           avatarName="SpaceOne"
           energyName="AstroFiction"
-          price="1.63ETH"
-          highestBid="0.33wETH"
+          price="1.63Toro"
           className="flex flex-col w-full h-72 my-3 sm:w-[45%] md:w-[30%]"
         />
         <EachEnergy
@@ -57,8 +54,7 @@ const MarketPlace = () => {
           img2={img.a1}
           avatarName="SpaceOne"
           energyName="AstroFiction"
-          price="1.63ETH"
-          highestBid="0.33wETH"
+          price="1.63Toro"
           className="flex flex-col w-full h-72 my-3 sm:w-[45%] md:w-[30%] md:flex"
         />
         <EachEnergy
@@ -66,8 +62,7 @@ const MarketPlace = () => {
           img2={img.a1}
           avatarName="SpaceOne"
           energyName="AstroFiction"
-          price="1.63ETH"
-          highestBid="0.33wETH"
+          price="1.63Toro"
           className="flex flex-col w-full h-72 my-3 sm:w-[45%] md:w-[30%] md:flex"
         />
         <EachEnergy
@@ -75,8 +70,7 @@ const MarketPlace = () => {
           img2={img.a1}
           avatarName="SpaceOne"
           energyName="AstroFiction"
-          price="1.63ETH"
-          highestBid="0.33wETH"
+          price="1.63Toro"
           className="flex flex-col w-full h-72 my-3 sm:w-[45%] md:w-[30%] md:flex"
         />
         <EachEnergy
@@ -84,8 +78,7 @@ const MarketPlace = () => {
           img2={img.a1}
           avatarName="SpaceOne"
           energyName="AstroFiction"
-          price="1.63ETH"
-          highestBid="0.33wETH"
+          price="1.63Toro"
           className="flex flex-col w-full h-72 my-3 sm:w-[45%] md:w-[30%] md:flex"
         />
         <EachEnergy
@@ -93,8 +86,7 @@ const MarketPlace = () => {
           img2={img.a1}
           avatarName="SpaceOne"
           energyName="AstroFiction"
-          price="1.63ETH"
-          highestBid="0.33wETH"
+          price="1.63Toro"
           className="flex flex-col w-full h-72 my-3 sm:w-[45%] md:w-[30%] md:flex"
         />
         <EachEnergy
@@ -102,8 +94,7 @@ const MarketPlace = () => {
           img2={img.a1}
           avatarName="SpaceOne"
           energyName="AstroFiction"
-          price="1.63ETH"
-          highestBid="0.33wETH"
+          price="1.63Toro"
           className="hidden flex flex-col w-full h-72 my-3 sm:w-[45%] md:w-[30%] md:flex"
         />
         <EachEnergy
@@ -111,8 +102,7 @@ const MarketPlace = () => {
           img2={img.a1}
           avatarName="SpaceOne"
           energyName="AstroFiction"
-          price="1.63ETH"
-          highestBid="0.33wETH"
+          price="1.63Toro"
           className="hidden flex flex-col w-full h-72 my-3 sm:w-[45%] md:w-[30%] md:flex"
         />
         <EachEnergy
@@ -120,8 +110,7 @@ const MarketPlace = () => {
           img2={img.a1}
           avatarName="SpaceOne"
           energyName="AstroFiction"
-          price="1.63ETH"
-          highestBid="0.33wETH"
+          price="1.63Toro"
           className="hidden flex flex-col w-full h-72 my-3 sm:w-[45%] md:w-[30%] md:flex"
         />
         <EachEnergy
@@ -129,8 +118,7 @@ const MarketPlace = () => {
           img2={img.a1}
           avatarName="SpaceOne"
           energyName="AstroFiction"
-          price="1.63ETH"
-          highestBid="0.33wETH"
+          price="1.63Toro"
           className="hidden flex flex-col w-full h-72 my-3 sm:w-[45%] md:w-[30%] md:flex"
         />
       </section>

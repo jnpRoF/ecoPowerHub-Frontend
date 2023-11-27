@@ -2,7 +2,7 @@ const Register = ({ src, pageHead, pageText1, pageText2, children }) => {
   
 
   return (
-    <div className="flex flex-col space-y-4 bg-background justify-between md:flex-row md:space-y-0">
+    <div className="flex flex-col bg-background justify-between md:flex-row md:space-y-0">
       <div className="w-full h-60 md:w-[45%] md:h-screen">
         <img src={src} alt="" className="w-full h-full" />
       </div>

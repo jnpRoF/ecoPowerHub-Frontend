@@ -1,7 +1,6 @@
-import img from "../../constants/images";
-import Button from "../Button/Button";
+// import Button from "../Button/Button";
 
-const Creator = ({ creatorName, salesAmt, creatorNum, className, href }) => {
+const Creator = ({ creatorName, salesAmt, creatorNum, className, href, src }) => {
   return (
     <a className={className} href={href}>
       <div className="relative">
@@ -9,7 +8,7 @@ const Creator = ({ creatorName, salesAmt, creatorNum, className, href }) => {
           {creatorNum}
         </div>
         <img
-          src={img.a1}
+          src={src}
           alt=""
           className="w-12 h-12 sm:w-10 sm:h-10 md:w-20 md:h-20"
         />

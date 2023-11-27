@@ -2,6 +2,7 @@ import Button from "../Button/Button";
 import { FaShop } from "react-icons/fa6";
 import { GoPerson } from "react-icons/go";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -16,9 +17,9 @@ const NavBar = () => {
         <span className="text-ctaColor">
           <FaShop />
         </span>
-        <a id="logoText" href="/" className="font-semibold text-xl">
+        <Link id="logoText" href="/" className="font-semibold text-xl">
           Energy Marketplace
-        </a>
+        </Link>
       </div>
       <button
         id="menu-btn"
