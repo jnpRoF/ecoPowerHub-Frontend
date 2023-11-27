@@ -19,7 +19,7 @@ const EachEnergy = ({
         }
     }
 
-    const [isInvesting, setIsInvesting] = useState(false)
+    // const [isInvesting, setIsInvesting] = useState(false)
     const [isProcessing, setIsProcessing] = useState(false)
     const toroAddress = "0xff0dFAe9c45EeB5cA5d269BE47eea69eab99bf6C"
      const toroABI = [
@@ -1016,47 +1016,47 @@ const EachEnergy = ({
             payable: true,
         },
     ]
-    const invest = async () => {
-        if (typeof window.ethereum !== 'undefined') {
-            setIsInvesting(true)
+    // const invest = async () => {
+    //     if (typeof window.ethereum !== 'undefined') {
+    //         setIsInvesting(true)
 
-            try {
-                const provider = new ethers.providers.Web3Provider(
-                    window.ethereum
-                )
-                const signer = provider.getSigner()
+    //         try {
+    //             const provider = new ethers.providers.Web3Provider(
+    //                 window.ethereum
+    //             )
+    //             const signer = provider.getSigner()
 
-                const tokenContract = new ethers.Contract(
-                    toroAddress,
-                    toroABI,
-                    signer
-                )
-                const contract = new ethers.Contract(
-                    ServiceMarketplaceAddress,
-                    ServiceMarketplaceABI,
-                    signer
-                )
+    //             const tokenContract = new ethers.Contract(
+    //                 toroAddress,
+    //                 toroABI,
+    //                 signer
+    //             )
+    //             const contract = new ethers.Contract(
+    //                 ServiceMarketplaceAddress,
+    //                 ServiceMarketplaceABI,
+    //                 signer
+    //             )
 
-                await tokenContract.approve(
-                    ServiceMarketplaceAddress,
-                    BigNumber.from('100000000000000000')
-                )
-                const txnResponse = await contract.invest(
-                    0,
-                    BigNumber.from('100000000000000000')
-                )
-                await listenForTxnMine(txnResponse, provider)
+    //             await tokenContract.approve(
+    //                 ServiceMarketplaceAddress,
+    //                 BigNumber.from('100000000000000000')
+    //             )
+    //             const txnResponse = await contract.invest(
+    //                 0,
+    //                 BigNumber.from('100000000000000000')
+    //             )
+    //             await listenForTxnMine(txnResponse, provider)
 
-                console.log('Investment successful!')
-            } catch (error) {
-                console.error(error)
-            } finally {
-                setIsInvesting(false)
-            }
-        } else {
-            console.log('Please install MetaMask to invest.')
-        }
-    }
+    //             console.log('Investment successful!')
+    //         } catch (error) {
+    //             console.error(error)
+    //         } finally {
+    //             setIsInvesting(false)
+    //         }
+    //     } else {
+    //         console.log('Please install MetaMask to invest.')
+    //     }
+    // }
 
     const payForService = async () => {
         if (typeof window.ethereum !== 'undefined') {
@@ -1121,14 +1121,14 @@ const EachEnergy = ({
                         <p className="text-sm">{price}</p>
                     </div>
                     <div className="flex flex-col space-y-1 sm:text-end">
-                        <button
+                        {/* <button
                             className="text-sm bg-ctaColor rounded-full p-2"
                             // onClick={handleButtonClick}
                             onClick={invest}
                             disabled={isInvesting}
                         >
                             {isInvesting ? 'Investing...' : 'Invest Now'}
-                        </button>
+                        </button> */}
                         <button
                             className="text-sm bg-ctaColor rounded-full p-2"
                             // onClick={handleButtonClick}
