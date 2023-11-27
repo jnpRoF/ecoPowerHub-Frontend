@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import Register from '../Register/Register'
+import img from '../../constants/images'
 
 const Login = ({ getToken }) => {
     const navigate = useNavigate()
@@ -43,36 +45,42 @@ const Login = ({ getToken }) => {
     }
 
     return (
-        <form onSubmit={handleSubmit}>
-            <div>
-                <label>Email:</label>
-                <input
-                    type="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleInputChange}
-                    placeholder="Email Address"
-                    className="p-2 rounded-r-2xl text-black focus:outline-none"
-                />
-            </div>
-            <div>
-                <label>Password:</label>
-                <input
-                    type="password"
-                    name="password"
-                    value={formData.password}
-                    onChange={handleInputChange}
-                    placeholder="Password"
-                    className="p-2 rounded-r-2xl text-black focus:outline-none"
-                />
-            </div>
-            <button
-                type="submit"
-                className="px-8 p-4 pt-4 w-full font-semibold bg-ctaColor rounded-full text-center lg:w-3/5"
-            >
-                Login
-            </button>
-        </form>
+        <Register
+            src={img.energy9}
+            pageHead="Login to your Account"
+            pageText1="Login to access your dashboard"
+        >
+            <form onSubmit={handleSubmit} className="flex flex-col space-y-5">
+                <div className="flex gap-10 text-lg font1 font-semibold items-center">
+                    <label>Email:</label>
+                    <input
+                        type="email"
+                        name="email"
+                        value={formData.email}
+                        onChange={handleInputChange}
+                        placeholder="Email Address"
+                        className="p-2 rounded-2xl text-black w-3/5 focus:outline-none"
+                    />
+                </div>
+                <div className="flex gap-3 text-lg font1 font-semibold items-center">
+                    <label>Password:</label>
+                    <input
+                        type="password"
+                        name="password"
+                        value={formData.password}
+                        onChange={handleInputChange}
+                        placeholder="Password"
+                        className="p-2 rounded-2xl text-black w-3/5 focus:outline-none"
+                    />
+                </div>
+                <button
+                    type="submit"
+                    className="px-8 p-4 pt-4 w-full font-semibold text-lg bg-ctaColor rounded-full text-center lg:w-3/5"
+                >
+                    Login
+                </button>
+            </form>
+        </Register>
     )
 }
 
@@ -83,7 +91,6 @@ export default Login
 // eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAwOTkzNDk3LCJpYXQiOjE3MDA5OTMxOTcsImp0aSI6IjZlMzJmYmMwZThlYTQ0OWNiZjk1OTA4NzMxOGE2YmJlIiwidXNlcl9pZCI6IjI0MzI0NmI5LTljZDUtNDIyMy04ZmU5LTMzNGQzODU4MTYwNSJ9.h6JqV-m_6_zD0prwenQwZQGynQAijhXKy9fk_QL5ah0
 
 // papy texted me this morning, i just want to stop teaching,is this a sign that i should collect the job and that this hackathon will not work out, abeg oo and i wanted to be happy that money has come or I'm just thinking
-
 
 // const [energyProjects, setenergyProjects] = useState([]);
 

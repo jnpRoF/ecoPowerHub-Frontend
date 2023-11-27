@@ -16,13 +16,13 @@ const Footer = () => {
                             <span className="text-ctaColor">
                                 <FaShop />
                             </span>
-                            <Link
+                            <a
                                 id="logoText"
                                 href="/"
                                 className="font-semibold font1 text-textColor text-lg md:text-xl"
                             >
                                 Energy Marketplace
-                            </Link>
+                            </a>
                         </div>
                         <p className="text-sm w-4/5 md:text-lg">
                             Energy marketplace UI developed by jpRoF.

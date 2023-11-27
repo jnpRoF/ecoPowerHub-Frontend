@@ -3,8 +3,8 @@ import AvatarTab from '../AvatarTab/AvatarTab'
 
 const EachEnergy = ({
     img,
-    energyName,
-    avatarName,
+    energySource,
+    projectName,
     img2,
     price,
     className,
@@ -24,11 +24,11 @@ const EachEnergy = ({
             <img src={img} alt="" className="w-full h-[90%] rounded-t-2xl" />
             <div className="font1 flex flex-col bg-darkGrey rounded-b-xl py-4">
                 <div className="flex flex-col justify-between px-4">
-                    <p className="test-lg font-semibold">{energyName}</p>
+                    <p className="test-lg font-semibold">{energySource}</p>
                     <AvatarTab
                         src={img2}
                         alt=""
-                        avatarName={avatarName}
+                        projectName={projectName}
                         className="flex space-x-2"
                     ></AvatarTab>
                 </div>

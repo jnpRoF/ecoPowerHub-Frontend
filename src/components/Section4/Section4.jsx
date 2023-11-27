@@ -1,9 +1,38 @@
 import { IoEyeOutline } from 'react-icons/io5'
+import { useEffect, useState } from 'react'
+import axios from 'axios'
 import img from '../../constants/images'
 import Button from '../Button/Button'
 import EachEnergy from '../EachEnergy/EachEnergy'
 
 const Section4 = () => {
+    const [marketplaceProjects, setMarketplaceProjects] = useState([])
+    useEffect(() => {
+        const onPageLoad = async () => {
+            try {
+                const response = await axios.get(
+                    'https://ecopowerhub-backend-production.up.railway.app/marketplace/',
+
+                    {
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                    }
+                )
+
+                console.log(
+                    'Marketplace details retrieved successfully:',
+                    response.data
+                )
+                setMarketplaceProjects(response.data)
+            } catch (error) {
+                console.error('Error getting form:', error)
+            }
+        }
+        onPageLoad()
+    }, [])
+
+    console.log(marketplaceProjects)
     return (
         <section className="flex flex-col space-y-8 my-20 w-4/5 mx-auto md:w-5/6">
             <div className="flex flex-col text-start justify-between space-y-2 sm:flex-row sm:space-y-0 sm:space-x-3">
@@ -26,6 +55,20 @@ const Section4 = () => {
                 </Button>
             </div>
             <div className="flex flex-col justify-between flex-wrap sm:flex-row">
+                {marketplaceProjects.map(($eachProject) => {
+                    return (
+                        <EachEnergy
+                            key={$eachProject.id}
+                            img={img.energy11}
+                            img2={img.a1}
+                            projectName={$eachProject.project_name}
+                            energySource={$eachProject.energy_source}
+                            price={`${$eachProject.price} Toro`}
+                            className="flex flex-col w-full h-full my-3 sm:w-[47%] md:w-[28%] cursor-pointer"
+                            href="energy"
+                        />
+                    )
+                })}
                 <EachEnergy
                     img={img.energy11}
                     img2={img.a1}

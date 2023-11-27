@@ -133,7 +133,7 @@ const User = () => {
 
                 <button
                     type="submit"
-                    className="px-8 p-4 pt-4 w-full font-semibold bg-ctaColor rounded-full text-center lg:w-3/5"
+                    className="px-8 p-4 pt-4 w-full font-semibold bg-ctaColor rounded-full text-center text-lg lg:w-3/5"
                 >
                     Create Account
                 </button>

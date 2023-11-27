@@ -1,7 +1,7 @@
+import { useState } from "react";
 import Button from "../Button/Button";
 import { FaShop } from "react-icons/fa6";
 import { GoPerson } from "react-icons/go";
-import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
@@ -17,9 +17,9 @@ const NavBar = () => {
         <span className="text-ctaColor">
           <FaShop />
         </span>
-        <Link id="logoText" href="/" className="font-semibold text-xl">
+        <a id="logoText" href="/" className="font-semibold text-xl">
           Energy Marketplace
-        </Link>
+        </a>
       </div>
       <button
         id="menu-btn"
@@ -68,8 +68,8 @@ const NavBar = () => {
         <a href="marketplace" className="font1">
           Marketplace
         </a>
-        <a href="#" className="font1">
-          Rankings
+        <a href="login" className="font1">
+          Login
         </a>
         <a href="connect-wallet" className="font1">
           Connect a wallet

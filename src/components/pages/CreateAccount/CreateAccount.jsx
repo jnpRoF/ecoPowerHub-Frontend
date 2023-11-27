@@ -49,20 +49,20 @@ const CreateAccount = () => {
             <Register
                 src={img.space6}
                 pageHead="Create Account"
-                pageText1="Welcome! Enter your details and start creating,collecting and selling NFTs"
+                pageText1="Welcome! Enter your details and start investing,creating and selling Energy projects."
             >
                 <>
                     {isCompany === '' ? (
                         <>
-                            <h2>Sign Up as:</h2>
+                            <h2 className='font-semibold text-lg'>Sign Up as:</h2>
                             <button
-                                className="bg-ctaColor rounded-full"
+                                className="px-8 p-4 pt-4 w-full font-semibold text-lg bg-ctaColor rounded-full text-center lg:w-3/5"
                                 onClick={(_) => setIsCompany(true)}
                             >
                                 Business
                             </button>
                             <button
-                                className="bg-ctaColor rounded-full"
+                                className="px-8 p-4 pt-4 w-full font-semibold text-lg bg-ctaColor rounded-full text-center lg:w-3/5"
                                 onClick={(_) => setIsCompany(false)}
                             >
                                 User
