@@ -34,7 +34,7 @@ const Login = ({ getToken }) => {
             )
 
             console.log('Login submitted successfully:', response.data)
-            getToken(response.access)
+            getToken(response.data.access)
             navigate('/user')
         } catch (error) {
             console.error('Error submitting form:', error)

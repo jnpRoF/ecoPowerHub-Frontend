@@ -16,7 +16,7 @@ const App = () => {
 
     const getToken = (accessLocalToken) => {
         setAccessToken(accessLocalToken)
-        console.log("it worked!!!");
+        console.log('it worked!!!' + accessLocalToken)
     }
 
     return (

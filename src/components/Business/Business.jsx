@@ -1,12 +1,15 @@
-import React from 'react'
-import Button from '../Button/Button'
+
+import { useState } from 'react'
+import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 import { GoPerson } from 'react-icons/go'
 import { CiMail } from 'react-icons/ci'
 import { CiLock } from 'react-icons/ci'
-import { useState } from 'react'
-import axios from 'axios'
+import Button from '../Button/Button'
 
 const Business = () => {
+const navigate = useNavigate()
+
     const [formData, setFormData] = useState({
         email: '',
         password: '',
@@ -23,7 +26,6 @@ const Business = () => {
     })
 
     const handleInputChange = (e) => {
-        console.log(e.target)
         const { name, value } = e.target
         setFormData({
             ...formData,
@@ -37,10 +39,16 @@ const Business = () => {
         try {
             const response = await axios.post(
                 'https://ecopowerhub-backend-production.up.railway.app/users/signup/',
-                formData
+                formData,
+                {
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                }
             )
 
             console.log('Form submitted successfully:', response.data)
+            navigate('/login')
         } catch (error) {
             console.error('Error submitting form:', error)
         }
@@ -102,6 +110,21 @@ const Business = () => {
                             <CiLock />
                         </span>
                         <input
+                            inputMode="numeric"
+                            name="phone_number"
+                            value={formData.phone_number}
+                            onChange={handleInputChange}
+                            placeholder="Phone Number"
+                            className="p-2 rounded-r-2xl text-black focus:outline-none"
+                        />
+                    </div>
+                </Button>
+                <Button className="w-full font-semibold bg-white rounded-2xl text-center lg:w-3/5">
+                    <div className="flex items-center text-lg pl-4">
+                        <span className="text-darkGrey">
+                            <CiLock />
+                        </span>
+                        <input
                             type="password"
                             name="password"
                             value={formData.password}
@@ -117,11 +140,11 @@ const Business = () => {
                             <CiLock />
                         </span>
                         <input
-                            inputMode="numeric"
-                            name="phone_number"
-                            value={formData.phone_number}
+                            type="text"
+                            name="business_name"
+                            value={formData.business_name}
                             onChange={handleInputChange}
-                            placeholder="Phone Number"
+                            placeholder="Business Name"
                             className="p-2 rounded-r-2xl text-black focus:outline-none"
                         />
                     </div>
@@ -134,10 +157,26 @@ const Business = () => {
                         </span>
                         <input
                             inputMode="numeric"
-                            name="phone_number"
-                            //   value={formData.phone_number}
-                            //   onChange={handleInputChange}
-                            placeholder="Total Business Value"
+                            name="business_worth"
+                            value={formData.business_worth}
+                            onChange={handleInputChange}
+                            placeholder="Business Worth"
+                            className="p-2 rounded-r-2xl text-black focus:outline-none"
+                        />
+                    </div>
+                </Button>
+
+                <Button className="w-full font-semibold bg-white rounded-2xl text-center lg:w-3/5">
+                    <div className="flex items-center text-lg pl-4">
+                        <span className="text-darkGrey">
+                            <CiLock />
+                        </span>
+                        <input
+                            type="text"
+                            name="business_description"
+                            value={formData.business_description}
+                            onChange={handleInputChange}
+                            placeholder="Business Description"
                             className="p-2 rounded-r-2xl text-black focus:outline-none"
                         />
                     </div>
@@ -150,53 +189,51 @@ const Business = () => {
                         </span>
                         <input
                             inputMode="numeric"
-                            name="phone_number"
-                            //   value={formData.phone_number}
-                            //   onChange={handleInputChange}
-                            placeholder="Total shares"
+                            name="available_shares"
+                            value={formData.available_shares}
+                            onChange={handleInputChange}
+                            placeholder="Available Shares"
+                            className="p-2 rounded-r-2xl text-black focus:outline-none"
+                        />
+                    </div>
+                </Button>
+                <Button className="w-full font-semibold bg-white rounded-2xl text-center lg:w-3/5">
+                    <div className="flex items-center text-lg pl-4">
+                        <span className="text-darkGrey">
+                            <CiLock />
+                        </span>
+                        <input
+                            inputMode="numeric"
+                            name="total_shares"
+                            value={formData.total_shares}
+                            onChange={handleInputChange}
+                            placeholder="Total Shares"
+                            className="p-2 rounded-r-2xl text-black focus:outline-none"
+                        />
+                    </div>
+                </Button>
+                <Button className="w-full font-semibold bg-white rounded-2xl text-center lg:w-3/5">
+                    <div className="flex items-center text-lg pl-4">
+                        <span className="text-darkGrey">
+                            <CiLock />
+                        </span>
+                        <input
+                            inputMode="numeric"
+                            name="buyable_shares_percentage"
+                            buyable_shares_percentage
+                            onChange={handleInputChange}
+                            placeholder="Buyable Shares Percentage"
                             className="p-2 rounded-r-2xl text-black focus:outline-none"
                         />
                     </div>
                 </Button>
 
-                <Button className="w-full font-semibold bg-white rounded-2xl text-center lg:w-3/5">
-                    <div className="flex items-center text-lg pl-4">
-                        <span className="text-darkGrey">
-                            <CiLock />
-                        </span>
-                        <input
-                            inputMode="numeric"
-                            name="phone_number"
-                            //   value={formData.phone_number}
-                            //   onChange={handleInputChange}
-                            placeholder="Share Price"
-                            className="p-2 rounded-r-2xl text-black focus:outline-none"
-                        />
-                    </div>
-                </Button>
-                <Button className="w-full font-semibold bg-white rounded-2xl text-center lg:w-3/5">
-                    <div className="flex items-center text-lg pl-4">
-                        <span className="text-darkGrey">
-                            <CiLock />
-                        </span>
-                        <input
-                            inputMode="numeric"
-                            name="phone_number"
-                            //   value={formData.phone_number}
-                            //   onChange={handleInputChange}
-                            placeholder="Buyable Share"
-                            className="p-2 rounded-r-2xl text-black focus:outline-none"
-                        />
-                    </div>
-                </Button>
-                <Button
+                <button
+                    type="submit"
                     className="px-8 p-4 pt-4 w-full font-semibold bg-ctaColor rounded-full text-center lg:w-3/5"
-                    href="#"
                 >
-                    <div className="flex items-center text-lg pl-4 justify-center">
-                        <button type="submit">Create Account</button>
-                    </div>
-                </Button>
+                    Create Account
+                </button>
             </form>
         </>
     )

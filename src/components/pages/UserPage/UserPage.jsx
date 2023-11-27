@@ -13,7 +13,8 @@ import Tab from '../../Tab/Tab'
 import EachEnergy from '../../EachEnergy/EachEnergy'
 
 const UserPage = ({ accessToken }) => {
-  const [userDetails,setUserDetails] = useState({})
+    const [userDetails, setUserDetails] = useState({})
+    console.log(accessToken)
   useEffect(() => {
     const handleSubmit = async () => {
     // e.preventDefault()
@@ -21,13 +22,13 @@ const UserPage = ({ accessToken }) => {
     // console.log(formData)
 
     try {
-        const response = axios.get(
+        const response = await axios.get(
             'https://ecopowerhub-backend-production.up.railway.app/users/me/',
 
             {
                 headers: {
                     'Content-Type': 'application/json',
-                    Authorization: `Bearer ${accessToken}`,
+                    'Authorization': `Bearer ${accessToken}`,
                 },
             }
         )
