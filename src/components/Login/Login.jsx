@@ -86,21 +86,4 @@ const Login = ({ getToken }) => {
 
 export default Login
 
-// eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAwOTkzNDk3LCJpYXQiOjE3MDA5OTMxOTcsImp0aSI6IjZlMzJmYmMwZThlYTQ0OWNiZjk1OTA4NzMxOGE2YmJlIiwidXNlcl9pZCI6IjI0MzI0NmI5LTljZDUtNDIyMy04ZmU5LTMzNGQzODU4MTYwNSJ9.h6JqV-m_6_zD0prwenQwZQGynQAijhXKy9fk_QL5ah0
 
-// eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAwOTkzNDk3LCJpYXQiOjE3MDA5OTMxOTcsImp0aSI6IjZlMzJmYmMwZThlYTQ0OWNiZjk1OTA4NzMxOGE2YmJlIiwidXNlcl9pZCI6IjI0MzI0NmI5LTljZDUtNDIyMy04ZmU5LTMzNGQzODU4MTYwNSJ9.h6JqV-m_6_zD0prwenQwZQGynQAijhXKy9fk_QL5ah0
-
-// papy texted me this morning, i just want to stop teaching,is this a sign that i should collect the job and that this hackathon will not work out, abeg oo and i wanted to be happy that money has come or I'm just thinking
-
-// const [energyProjects, setenergyProjects] = useState([]);
-
-// useEffect(() => {
-//   const fetchEnergyProjects = async () => {
-//     let response = await axios.get(
-//       "https://ecopowerhub-backend-production.up.railway.app/marketplace"
-//     );
-//     setenergyProjects(response.data);
-//   };
-//   fetchEnergyProjects();
-//   console.log(energyProjects);
-// }, []);

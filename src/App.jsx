@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Context } from './contexts.js'
 import { Routes, Route } from 'react-router-dom'
+// import { ethers } from 'ethers'
+import { ethers, BigNumber } from './constants/ethers-5.6.esm.min.js'
 import HomePage from './components/pages/HomePage/HomePage.jsx'
 import ConnectWallet from './components/pages/ConnectWallet/ConnectWallet.jsx'
 import NavBar from './components/NavBar/Navbar.jsx'
@@ -19,6 +21,15 @@ const App = () => {
         console.log('it worked!!!' + accessLocalToken)
     }
 
+    const provider = new ethers.providers.Web3Provider(window.ethereum)
+    const isConnected = async () => {
+        const accounts = await provider.listAccounts()
+        return accounts.length > 0
+    }
+
+    // const contractFactory = new ethers.ContractFactory(contractABI, contractByteCode, provider)
+
+    // const contract = await contractFactory.deploy()
     return (
         <>
             <NavBar />
