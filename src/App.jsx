@@ -21,11 +21,11 @@ const App = () => {
         console.log('it worked!!!' + accessLocalToken)
     }
 
-    const provider = new ethers.providers.Web3Provider(window.ethereum)
-    const isConnected = async () => {
-        const accounts = await provider.listAccounts()
-        return accounts.length > 0
-    }
+    // const provider = new ethers.providers.Web3Provider(window.ethereum)
+    // const isConnected = async () => {
+    //     const accounts = await provider.listAccounts()
+    //     return accounts.length > 0
+    // }
 
     // const contractFactory = new ethers.ContractFactory(contractABI, contractByteCode, provider)
 
